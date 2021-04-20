@@ -29,7 +29,7 @@ node_modules/
 .sass-cache
 
 # Build
-lib/
+#lib/
 
 # Test tmp
 test/tmp/

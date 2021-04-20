@@ -204,7 +204,7 @@ class SWPrecacheWebpackPlugin {
 
     // use the outputFileSystem api to manually write service workers rather than adding to the compilation assets
     return new Promise((resolve, reject) => {
-      outputFileSystem.mkdirp(path.resolve(filepath, '..'), (mkdirErr) => {
+        outputFileSystem.mkdir(path.resolve(filepath, '..'), { recursive: true }, (mkdirErr) => {
         if (mkdirErr) {
           reject(mkdirErr);
           return;
